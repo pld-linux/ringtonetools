@@ -6,6 +6,7 @@ Release:	1
 License:	Kohnian
 Group:		Applications/Sound
 Source0:	http://65.108.58.129/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	137387c00b6d461b66816c890816c580
 URL:		http://nakentone.naken.cc/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

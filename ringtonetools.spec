@@ -4,10 +4,10 @@ Name:		ringtonetools
 Version:	1.06
 Release:	0
 License:	Kohnian
-Source0:	http://65.108.58.129/%{name}/%{name}-%{version}.tar.gz
 Group:		Applications/Sound
-Url:		http://nakentone.naken.cc/
-BuildRoot:  %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Source0:	http://65.108.58.129/%{name}/%{name}-%{version}.tar.gz
+URL:		http://nakentone.naken.cc/
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Ringtone Tools consists of 6 tools (rtttl2nokia, imelody2nokia,
@@ -19,27 +19,19 @@ For more information check the web page at http://nakentone.naken.cc/.
 %setup -q
 
 %build
-%{__make}
+%{__make} \
+	CC=%{__cc} \
+	FLAGS="%{rpmcflags}"
 
 %install
-
 rm -rf $RPM_BUILD_ROOT
 install -d ${RPM_BUILD_ROOT}%{_bindir}
 
-for i in    rtttl2nokia     \
-            imelody2nokia   \
-            nokia_icon      \
-            bmp2nokia_icon  \
-            midi2rtttl      \
-            imelody2wav     ;   do
-    install $i ${RPM_BUILD_ROOT}%{_bindir}/$i
-done
-
-#gzip -n9 samples/* LICENSE README
+install rtttl2nokia imelody2nokia nokia_icon bmp2nokia_icon midi2rtttl imelody2wav \
+	${RPM_BUILD_ROOT}%{_bindir}
 
 %clean
-make clean
-
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)

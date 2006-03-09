@@ -28,7 +28,7 @@ http://nakentone.naken.cc/.
 
 %build
 %{__make} \
-	CC=%{__cc} \
+	CC="%{__cc}" \
 	FLAGS="%{rpmcflags}"
 
 %install

@@ -1,5 +1,5 @@
 Summary:	Set of tools for creating ringtones and logos for mobile phones
-Summary(pl.UTF-8):   Zestaw narzędzi do tworzenia dzwonków i logo dla telefonów komórkowych
+Summary(pl.UTF-8):	Zestaw narzędzi do tworzenia dzwonków i logo dla telefonów komórkowych
 Name:		ringtonetools
 Version:	1.06
 Release:	1

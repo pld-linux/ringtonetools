@@ -1,5 +1,5 @@
 Summary:	Set of tools for creating ringtones and logos for mobile phones
-Summary(pl):	Zestaw narzêdzi do tworzenia dzwonków i logo dla telefonów komórkowych
+Summary(pl.UTF-8):   Zestaw narzÄ™dzi do tworzenia dzwonkÃ³w i logo dla telefonÃ³w komÃ³rkowych
 Name:		ringtonetools
 Version:	1.06
 Release:	1
@@ -16,11 +16,11 @@ nokia_icon, bmp2nokia_icon, midi2rtttl, imelody2wav). These programs
 help in the creation of ringtones and logos for Nokia mobile phones.
 For more information check the web page at http://nakentone.naken.cc/.
 
-%description -l pl
-Ringtone Tools sk³adaj± sie z 6 narzêdzi (rtttl2nokia, imelody2nokia,
-nokia_icon, bmp2nokia_icon, midi2rtttl, imelody2wav). Te programy s±
-pomocne przy tworzeniu dzwonków i logo dla telefonów komórkowych
-Nokia. Wiêcej informacji znajduje siê na stronie
+%description -l pl.UTF-8
+Ringtone Tools skÅ‚adajÄ… sie z 6 narzÄ™dzi (rtttl2nokia, imelody2nokia,
+nokia_icon, bmp2nokia_icon, midi2rtttl, imelody2wav). Te programy sÄ…
+pomocne przy tworzeniu dzwonkÃ³w i logo dla telefonÃ³w komÃ³rkowych
+Nokia. WiÄ™cej informacji znajduje siÄ™ na stronie
 http://nakentone.naken.cc/.
 
 %prep

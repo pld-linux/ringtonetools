@@ -8,6 +8,7 @@ Group:		Applications/Sound
 Source0:	http://65.108.58.129/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	137387c00b6d461b66816c890816c580
 URL:		http://nakentone.naken.cc/
+Patch0:		%{name}-fix.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,6 +26,7 @@ http://nakentone.naken.cc/.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \

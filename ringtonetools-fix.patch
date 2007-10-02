@@ -1,0 +1,12 @@
+--- ringtonetools-1.06.orig/src/imelody2nokia.c	2007-10-02 19:42:03.750728577 +0200
++++ ringtonetools-1.06/src/imelody2nokia.c	2007-10-02 19:45:38.130309750 +0200
+@@ -290,8 +290,7 @@
+ 
+   if (warning!=0 && higher==0)
+   {
+-    printf("Warning: Song uses lower octave.  Please read docs on the -o option.
+-\n");
++    printf("Warning: Song uses lower octave.  Please read docs on the -o option.\n");
+   }
+ 
+   printf("\n");
